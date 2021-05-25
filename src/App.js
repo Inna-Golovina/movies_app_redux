@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-//import { HashRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 
 import './App.css';
 
@@ -16,11 +16,13 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <div>
+        <Router>
+          <div>
             <Navbar />
             <Landing />
             <Footer />
-        </div>
+          </div>
+        </Router>
       </Provider>
     
           
