@@ -9,7 +9,7 @@
 //} from '../../actions/searchActions';
 
 import React, { Component } from 'react';
-import { connect, connectAdvanced } from 'react-redux';
+import { connect } from 'react-redux';
 import { searchMovie, fetchMovies, setLoading } from '../../actions/searchActions';
 
 export class SearchForm extends Component {
